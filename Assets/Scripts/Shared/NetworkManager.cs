@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine;
 using System.Collections;
 
 public class NetworkManager : MonoBehaviour
@@ -74,7 +73,7 @@ public class NetworkManager : MonoBehaviour
 	private void StartServer()
 	{
 		Network.maxConnections = 2;
-		Network.InitializeServer(5, 25000, !Network.HavePublicAddress());
+		Network.InitializeServer(5, 1337, !Network.HavePublicAddress());
 		MasterServer.RegisterHost(typeName, gameName);
 	}
 	private void PairNetworkObjects(){
@@ -102,13 +101,19 @@ public class NetworkManager : MonoBehaviour
 		//the other person is ready start the game
 		currentState++;
 	}
+	void OnLevelWasLoaded () {
+		if(Network.isServer){			
+			Network.Instantiate(spline,Vector3.one,Quaternion.identity,0);
+		} else {			
+			Network.Instantiate(player,Vector3.one,Quaternion.identity,0);
+		}
+	}
 //Server Stuff
 	void OnPlayerConnected()
 	{
 		//Create the spline.
 		//Set the Player's Spline
 		Application.LoadLevel("Game-Designer");
-		Network.Instantiate(spline,Vector3.one,Quaternion.identity,0);
 		currentState = (int)NetworkState.loading0;
 		//TODO finish the loading screen.
 		//TODO show the ready screen.
@@ -123,7 +128,6 @@ public class NetworkManager : MonoBehaviour
 	{
 		Application.LoadLevel("Game-Player");
 		//TODO Create Player
-		Network.Instantiate(player,Vector3.one,Quaternion.identity,0);
 		currentState = (int)NetworkState.loading0;
 		//TODO Show the Ready screen.
 	}

@@ -17,6 +17,13 @@ public class CharacterController : MonoBehaviour {
 	void Update () {
 		if(Network.isClient)
 			Movement();
+		else
+			SkyMovement();
+	}
+
+	private void SkyMovement() {
+		transform.localPosition = new Vector3(0, 8, 0);
+		transform.rotation.eulerAngles.Set(90, 0, 0);
 	}
 
 	private void Movement() {

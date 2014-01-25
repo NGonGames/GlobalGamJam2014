@@ -12,11 +12,10 @@ public class SplineAnimator : MonoBehaviour
 	public float offSet = 0f;
 	
 	public float passedTime = 0f;
-	public bool paused = true;
 
 	void Update( ) 
 	{
-		if(!paused) {
+		if(Network.isClient && spline != null) {
 			passedTime += Time.deltaTime * speed;
 			
 			float clampedParam = WrapValue( passedTime + offSet, 0f, 1f, wrapMode );
