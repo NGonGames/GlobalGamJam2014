@@ -6,7 +6,7 @@ public class NetworkManager : MonoBehaviour
 {
 	private const string typeName = "Game Designer";
 	private const string gameName = "RoomRoom";
-	private float lastUpdate = 0;
+	private float lastUpdate = 99999;
 	private bool matchMaking = false;
 
 	public GameObject playerPrefab;
@@ -44,6 +44,7 @@ public class NetworkManager : MonoBehaviour
 		{			
 			if (MasterServer.PollHostList().Length > 0)
 			{
+				matchMaking = false;
 				Network.Connect(MasterServer.PollHostList()[0]);
 			}
 			if (lastUpdate>pollRate) {
@@ -64,20 +65,15 @@ public class NetworkManager : MonoBehaviour
 	void OnPlayerConnected()
 	{
 		//TODO finish the loading screen.
-		//TODO Load network objects.
-		//Network.Instantiate(playerPrefab);
 	}
 	void OnServerInitialized()
 	{
 		//TODO show the loading screen.
-		//Load Level except network objects.
-		Application.LoadLevel("Game-Designer");
 	}
 
 //Client Stuff
 	void OnConnectedToServer()
 	{
-		matchMaking = false;
-		Application.LoadLevel("Game-Player");
+		//TODO Create Player
 	}
 }
