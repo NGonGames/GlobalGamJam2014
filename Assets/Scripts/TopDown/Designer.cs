@@ -5,6 +5,8 @@ public class Designer : MonoBehaviour {
 
 	public GameObject ability1;
 
+	public GameObject map;
+	public Spline spline;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,9 +16,18 @@ public class Designer : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown(0) && Network.isServer)
 		{
-			Vector3 placePosition = camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, camera.nearClipPlane));
-			placePosition = new Vector3(Mathf.Round(placePosition.x), 1, Mathf.Round(placePosition.z));
-			Network.Instantiate(ability1, placePosition, ability1.transform.rotation, 0);
+			Ray rayHitTest = camera.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(rayHitTest,out hit, 1000))
+			{
+				if (hit.transform.gameObject.Equals(spline.gameObject))
+				{
+					float param = spline.GetClosestPointParamToRay(rayHitTest,10);
+					Vector3 placePosition = transform.position = spline.GetPositionOnSpline( param );
+					Quaternion placeRotation = transform.rotation = spline.GetOrientationOnSpline( param );
+					Network.Instantiate(ability1, placePosition, placeRotation, 0);
+				}
+			}
 		}
 	}
 }

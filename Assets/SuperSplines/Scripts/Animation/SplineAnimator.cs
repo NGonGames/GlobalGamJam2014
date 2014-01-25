@@ -12,15 +12,18 @@ public class SplineAnimator : MonoBehaviour
 	public float offSet = 0f;
 	
 	public float passedTime = 0f;
-	
+	public bool paused = true;
+
 	void Update( ) 
 	{
-		passedTime += Time.deltaTime * speed;
-		
-		float clampedParam = WrapValue( passedTime + offSet, 0f, 1f, wrapMode );
-		
-		transform.position = spline.GetPositionOnSpline( clampedParam );
-		transform.rotation = spline.GetOrientationOnSpline( clampedParam );
+		if(!paused) {
+			passedTime += Time.deltaTime * speed;
+			
+			float clampedParam = WrapValue( passedTime + offSet, 0f, 1f, wrapMode );
+			
+			transform.position = spline.GetPositionOnSpline( clampedParam );
+			transform.rotation = spline.GetOrientationOnSpline( clampedParam );
+		}
 	}
 	
 	private float WrapValue( float v, float start, float end, WrapMode wMode )

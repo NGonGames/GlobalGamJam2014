@@ -15,26 +15,29 @@ public class CharacterController : MonoBehaviour {
     
 	// Update is called once per frame
 	void Update () {
+		if(Network.isClient)
+			Movement();
+	}
 
-        float h = Input.GetAxis("Horizontal");
-
-        if (Input.GetButton("Jump")) {
-            yspeed = jumpHeight;
-        }
-
-        yspeed -= gravity;
-        height += yspeed;
-
-        if (height < 0f) {
-            height = 0f;
-            yspeed = 0f;
-        }
-
-        offset += h * horizontalSpeed;
-        if (Mathf.Abs(offset) > offsetThreshold) {
-            offset = offsetThreshold * Mathf.Sign(offset);
-        }
-        transform.localPosition = new Vector3(offset, 0.2f + height, 0f);
-
+	private void Movement() {
+		float h = Input.GetAxis("Horizontal");
+		
+		if (Input.GetButton("Jump")) {
+			yspeed = jumpHeight;
+		}
+		
+		yspeed -= gravity;
+		height += yspeed;
+		
+		if (height < 0f) {
+			height = 0f;
+			yspeed = 0f;
+		}
+		
+		offset += h * horizontalSpeed;
+		if (Mathf.Abs(offset) > offsetThreshold) {
+			offset = offsetThreshold * Mathf.Sign(offset);
+		}
+		transform.localPosition = new Vector3(offset, 0.2f + height, 0f);
 	}
 }
