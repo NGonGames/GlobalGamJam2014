@@ -15,7 +15,9 @@ public class Designer : MonoBehaviour {
 		Lazor
 	}
 
+	[HideInInspector]
 	public Spline spline;
+	[HideInInspector]
 	public Camera cam;
 	// Use this for initialization
 	void Start () {
