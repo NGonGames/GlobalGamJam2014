@@ -50,7 +50,7 @@ public class NetworkManager : MonoBehaviour
 			case (int)NetworkState.matching:
 				MatchMake();
 				break;
-			case (int)NetworkState.loading0:
+			case 4:
 				PairNetworkObjects();
 				break;
 		}

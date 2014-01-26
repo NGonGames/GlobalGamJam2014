@@ -42,7 +42,7 @@ public class SplineCharacterController : MonoBehaviour {
 			height = 0f;
 			yspeed = 0f;
 		}
-		
+
 		if (height != 0) {
 			audioSource.volume = 0;
 		} else {
