@@ -5,8 +5,8 @@ public class Designer : MonoBehaviour {
 
 	public GameObject ability1;
 
-	public GameObject map;
 	public Spline spline;
+	public Camera cam;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,9 +14,9 @@ public class Designer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown(0) && Network.isServer)
+		if (Input.GetMouseButtonDown(0) && Network.isServer && spline != null)
 		{
-			Ray rayHitTest = camera.ScreenPointToRay(Input.mousePosition);
+			Ray rayHitTest = cam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			if(Physics.Raycast(rayHitTest,out hit, 1000))
 			{
