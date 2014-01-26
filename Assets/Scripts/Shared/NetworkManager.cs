@@ -59,6 +59,7 @@ public class NetworkManager : MonoBehaviour
 				break;
 			case (int)NetworkState.loading3:
 				//Delete Stuff From GameStart.
+				GameObject.Destroy(GameObject.Find("MainCamera"));
 				menuGUI.Destroy();
 				currentState++;
 				break;
