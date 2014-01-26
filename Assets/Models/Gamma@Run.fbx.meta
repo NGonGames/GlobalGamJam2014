@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: 9a6b3ba36b9e0bd459f1f8bdc0574350
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Gamma_Rig_007:ball_IK
+    100002: Gamma_Rig_007:ball_IK 1
+    100004: Gamma_Rig_007:ball_IK_GRP
+    100006: Gamma_Rig_007:ball_K_GRP
+    100008: Gamma_Rig_007:base_Handle
+    100010: Gamma_Rig_007:gamma_export_ref_002:body_all_GRP
+    100012: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP
+    100014: Gamma_Rig_007:gamma_export_ref_002:head_geo
+    100016: Gamma_Rig_007:gamma_export_ref_002:head_GRP
+    100018: Gamma_Rig_007:gamma_export_ref_002:hip_geo
+    100020: Gamma_Rig_007:gamma_export_ref_002:l_arm_GRP
+    100022: Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO
+    100024: Gamma_Rig_007:gamma_export_ref_002:l_elbow_GEO
+    100026: Gamma_Rig_007:gamma_export_ref_002:l_foot_GEO
+    100028: Gamma_Rig_007:gamma_export_ref_002:l_foot_GRP
+    100030: Gamma_Rig_007:gamma_export_ref_002:l_hand_GEO
+    100032: Gamma_Rig_007:gamma_export_ref_002:l_hand_GRP
+    100034: Gamma_Rig_007:gamma_export_ref_002:l_knee_GEO
+    100036: Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP
+    100038: Gamma_Rig_007:gamma_export_ref_002:l_leg_GEO
+    100040: Gamma_Rig_007:gamma_export_ref_002:l_leg_GRP
+    100042: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO
+    100044: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_joint_GEO
+    100046: Gamma_Rig_007:gamma_export_ref_002:l_thigh_GEO
+    100048: Gamma_Rig_007:gamma_export_ref_002:l_thigh_GRP
+    100050: Gamma_Rig_007:gamma_export_ref_002:l_thigh_joint_GEO
+    100052: Gamma_Rig_007:gamma_export_ref_002:l_wrist_GEO
+    100054: Gamma_Rig_007:gamma_export_ref_002:left
+    100056: Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP
+    100058: Gamma_Rig_007:gamma_export_ref_002:left_arm_top_GEO
+    100060: Gamma_Rig_007:gamma_export_ref_002:left_shoulder_GRP
+    100062: Gamma_Rig_007:gamma_export_ref_002:lower_body_GRP
+    100064: Gamma_Rig_007:gamma_export_ref_002:neck_1_GEO
+    100066: Gamma_Rig_007:gamma_export_ref_002:neck_1_GRP
+    100068: Gamma_Rig_007:gamma_export_ref_002:neck_2_GEO
+    100070: Gamma_Rig_007:gamma_export_ref_002:neck_2_GRP
+    100072: Gamma_Rig_007:gamma_export_ref_002:neck_3_GEO
+    100074: Gamma_Rig_007:gamma_export_ref_002:neck_3_GRP
+    100076: Gamma_Rig_007:gamma_export_ref_002:neck_4_GEO
+    100078: Gamma_Rig_007:gamma_export_ref_002:neck_4_GRP
+    100080: Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP
+    100082: Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP
+    100084: Gamma_Rig_007:gamma_export_ref_002:r_arm_GRP
+    100086: Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO
+    100088: Gamma_Rig_007:gamma_export_ref_002:r_arm_top_GEO
+    100090: Gamma_Rig_007:gamma_export_ref_002:r_elbow_GEO
+    100092: Gamma_Rig_007:gamma_export_ref_002:r_foot_GEO
+    100094: Gamma_Rig_007:gamma_export_ref_002:r_foot_GRP
+    100096: Gamma_Rig_007:gamma_export_ref_002:r_hand_GEO
+    100098: Gamma_Rig_007:gamma_export_ref_002:r_hand_GRP
+    100100: Gamma_Rig_007:gamma_export_ref_002:r_knee_GEO
+    100102: Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP
+    100104: Gamma_Rig_007:gamma_export_ref_002:r_leg_GEO
+    100106: Gamma_Rig_007:gamma_export_ref_002:r_leg_GRP
+    100108: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO
+    100110: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GRP
+    100112: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_joint_GEO
+    100114: Gamma_Rig_007:gamma_export_ref_002:r_thigh_GEO
+    100116: Gamma_Rig_007:gamma_export_ref_002:r_thigh_GRP
+    100118: Gamma_Rig_007:gamma_export_ref_002:r_thigh_joint_GEO
+    100120: Gamma_Rig_007:gamma_export_ref_002:r_wrist_GEO
+    100122: Gamma_Rig_007:gamma_export_ref_002:torso_geo
+    100124: Gamma_Rig_007:gamma_export_ref_002:upper_body_GRP
+    100126: Gamma_Rig_007:gamma_export_ref_002:waist_geo
+    100128: Gamma_Rig_007:hand_all_GRP
+    100130: Gamma_Rig_007:head_jnt
+    100132: Gamma_Rig_007:hip_hnd
+    100134: Gamma_Rig_007:hip_jnt
+    100136: Gamma_Rig_007:IK_all_GRP
+    100138: Gamma_Rig_007:jnt_GRP
+    100140: Gamma_Rig_007:l_ankle_jnt
+    100142: Gamma_Rig_007:l_elbow_hnd
+    100144: Gamma_Rig_007:l_elbow_jnt
+    100146: Gamma_Rig_007:l_elbow_jnt 1
+    100148: Gamma_Rig_007:l_foot_hnd
+    100150: Gamma_Rig_007:l_foot_IK_GRP
+    100152: Gamma_Rig_007:l_hand_jnt
+    100154: Gamma_Rig_007:l_heel_IK
+    100156: Gamma_Rig_007:l_heel_IK_GRP
+    100158: Gamma_Rig_007:l_heel_jnt
+    100160: Gamma_Rig_007:l_hip_jnt
+    100162: Gamma_Rig_007:l_knee_hnd
+    100164: Gamma_Rig_007:l_knee_jnt
+    100166: Gamma_Rig_007:l_shoulder_hnd
+    100168: Gamma_Rig_007:l_toe_2_jnt
+    100170: Gamma_Rig_007:l_toe_jnt
+    100172: Gamma_Rig_007:l_wrist_hnd
+    100174: Gamma_Rig_007:l_wrist_jnt
+    100176: Gamma_Rig_007:left_clavicle_jnt
+    100178: Gamma_Rig_007:left_finger_jnt
+    100180: Gamma_Rig_007:move_me_hnd
+    100182: Gamma_Rig_007:neck_1_hnd
+    100184: Gamma_Rig_007:neck_1_jnt
+    100186: Gamma_Rig_007:neck_2_hnd
+    100188: Gamma_Rig_007:neck_2_jnt
+    100190: Gamma_Rig_007:neck_3_hnd
+    100192: Gamma_Rig_007:neck_3_Jnt
+    100194: Gamma_Rig_007:neck_4_hnd
+    100196: Gamma_Rig_007:neck_4_jnt
+    100198: Gamma_Rig_007:r_ankle_jnt
+    100200: Gamma_Rig_007:r_clavicle_jnt
+    100202: Gamma_Rig_007:r_elbow_hnd
+    100204: Gamma_Rig_007:r_elbow_jnt
+    100206: Gamma_Rig_007:r_finger_jnt
+    100208: Gamma_Rig_007:r_foot_hnd
+    100210: Gamma_Rig_007:r_foot_IK_all
+    100212: Gamma_Rig_007:r_heel_IK
+    100214: Gamma_Rig_007:r_heel_IK_GRP
+    100216: Gamma_Rig_007:r_heel_jnt
+    100218: Gamma_Rig_007:r_hip_jnt
+    100220: Gamma_Rig_007:r_hnd_jnt
+    100222: Gamma_Rig_007:r_knee_hnd
+    100224: Gamma_Rig_007:r_knee_jnt
+    100226: Gamma_Rig_007:r_shoulder_hnd
+    100228: Gamma_Rig_007:r_shoulder_jnt
+    100230: Gamma_Rig_007:r_toe_2_jnt
+    100232: Gamma_Rig_007:r_toe_jnt
+    100234: Gamma_Rig_007:r_wrist_hnd
+    100236: Gamma_Rig_007:r_wrist_jnt
+    100238: Gamma_Rig_007:root_jnt
+    100240: Gamma_Rig_007:spine_1_hnd
+    100242: Gamma_Rig_007:spine_1_jnt
+    100244: Gamma_Rig_007:spine_2_hnd
+    100246: Gamma_Rig_007:spine_2_jnt
+    100248: Gamma_Rig_007:spine_3_hnd
+    100250: Gamma_Rig_007:spine_3_jnt
+    100252: Gamma_Rig_007:toe_IK
+    100254: Gamma_Rig_007:toe_IK 1
+    100256: Gamma_Rig_007:toe_IK_GRP
+    100258: Gamma_Rig_007:toe_IK_GRP 1
+    100260: //RootNode
+    400000: Gamma_Rig_007:ball_IK
+    400002: Gamma_Rig_007:ball_IK 1
+    400004: Gamma_Rig_007:ball_IK_GRP
+    400006: Gamma_Rig_007:ball_K_GRP
+    400008: Gamma_Rig_007:base_Handle
+    400010: Gamma_Rig_007:gamma_export_ref_002:body_all_GRP
+    400012: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP
+    400014: Gamma_Rig_007:gamma_export_ref_002:head_geo
+    400016: Gamma_Rig_007:gamma_export_ref_002:head_GRP
+    400018: Gamma_Rig_007:gamma_export_ref_002:hip_geo
+    400020: Gamma_Rig_007:gamma_export_ref_002:l_arm_GRP
+    400022: Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO
+    400024: Gamma_Rig_007:gamma_export_ref_002:l_elbow_GEO
+    400026: Gamma_Rig_007:gamma_export_ref_002:l_foot_GEO
+    400028: Gamma_Rig_007:gamma_export_ref_002:l_foot_GRP
+    400030: Gamma_Rig_007:gamma_export_ref_002:l_hand_GEO
+    400032: Gamma_Rig_007:gamma_export_ref_002:l_hand_GRP
+    400034: Gamma_Rig_007:gamma_export_ref_002:l_knee_GEO
+    400036: Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP
+    400038: Gamma_Rig_007:gamma_export_ref_002:l_leg_GEO
+    400040: Gamma_Rig_007:gamma_export_ref_002:l_leg_GRP
+    400042: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO
+    400044: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_joint_GEO
+    400046: Gamma_Rig_007:gamma_export_ref_002:l_thigh_GEO
+    400048: Gamma_Rig_007:gamma_export_ref_002:l_thigh_GRP
+    400050: Gamma_Rig_007:gamma_export_ref_002:l_thigh_joint_GEO
+    400052: Gamma_Rig_007:gamma_export_ref_002:l_wrist_GEO
+    400054: Gamma_Rig_007:gamma_export_ref_002:left
+    400056: Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP
+    400058: Gamma_Rig_007:gamma_export_ref_002:left_arm_top_GEO
+    400060: Gamma_Rig_007:gamma_export_ref_002:left_shoulder_GRP
+    400062: Gamma_Rig_007:gamma_export_ref_002:lower_body_GRP
+    400064: Gamma_Rig_007:gamma_export_ref_002:neck_1_GEO
+    400066: Gamma_Rig_007:gamma_export_ref_002:neck_1_GRP
+    400068: Gamma_Rig_007:gamma_export_ref_002:neck_2_GEO
+    400070: Gamma_Rig_007:gamma_export_ref_002:neck_2_GRP
+    400072: Gamma_Rig_007:gamma_export_ref_002:neck_3_GEO
+    400074: Gamma_Rig_007:gamma_export_ref_002:neck_3_GRP
+    400076: Gamma_Rig_007:gamma_export_ref_002:neck_4_GEO
+    400078: Gamma_Rig_007:gamma_export_ref_002:neck_4_GRP
+    400080: Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP
+    400082: Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP
+    400084: Gamma_Rig_007:gamma_export_ref_002:r_arm_GRP
+    400086: Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO
+    400088: Gamma_Rig_007:gamma_export_ref_002:r_arm_top_GEO
+    400090: Gamma_Rig_007:gamma_export_ref_002:r_elbow_GEO
+    400092: Gamma_Rig_007:gamma_export_ref_002:r_foot_GEO
+    400094: Gamma_Rig_007:gamma_export_ref_002:r_foot_GRP
+    400096: Gamma_Rig_007:gamma_export_ref_002:r_hand_GEO
+    400098: Gamma_Rig_007:gamma_export_ref_002:r_hand_GRP
+    400100: Gamma_Rig_007:gamma_export_ref_002:r_knee_GEO
+    400102: Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP
+    400104: Gamma_Rig_007:gamma_export_ref_002:r_leg_GEO
+    400106: Gamma_Rig_007:gamma_export_ref_002:r_leg_GRP
+    400108: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO
+    400110: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GRP
+    400112: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_joint_GEO
+    400114: Gamma_Rig_007:gamma_export_ref_002:r_thigh_GEO
+    400116: Gamma_Rig_007:gamma_export_ref_002:r_thigh_GRP
+    400118: Gamma_Rig_007:gamma_export_ref_002:r_thigh_joint_GEO
+    400120: Gamma_Rig_007:gamma_export_ref_002:r_wrist_GEO
+    400122: Gamma_Rig_007:gamma_export_ref_002:torso_geo
+    400124: Gamma_Rig_007:gamma_export_ref_002:upper_body_GRP
+    400126: Gamma_Rig_007:gamma_export_ref_002:waist_geo
+    400128: Gamma_Rig_007:hand_all_GRP
+    400130: Gamma_Rig_007:head_jnt
+    400132: Gamma_Rig_007:hip_hnd
+    400134: Gamma_Rig_007:hip_jnt
+    400136: Gamma_Rig_007:IK_all_GRP
+    400138: Gamma_Rig_007:jnt_GRP
+    400140: Gamma_Rig_007:l_ankle_jnt
+    400142: Gamma_Rig_007:l_elbow_hnd
+    400144: Gamma_Rig_007:l_elbow_jnt
+    400146: Gamma_Rig_007:l_elbow_jnt 1
+    400148: Gamma_Rig_007:l_foot_hnd
+    400150: Gamma_Rig_007:l_foot_IK_GRP
+    400152: Gamma_Rig_007:l_hand_jnt
+    400154: Gamma_Rig_007:l_heel_IK
+    400156: Gamma_Rig_007:l_heel_IK_GRP
+    400158: Gamma_Rig_007:l_heel_jnt
+    400160: Gamma_Rig_007:l_hip_jnt
+    400162: Gamma_Rig_007:l_knee_hnd
+    400164: Gamma_Rig_007:l_knee_jnt
+    400166: Gamma_Rig_007:l_shoulder_hnd
+    400168: Gamma_Rig_007:l_toe_2_jnt
+    400170: Gamma_Rig_007:l_toe_jnt
+    400172: Gamma_Rig_007:l_wrist_hnd
+    400174: Gamma_Rig_007:l_wrist_jnt
+    400176: Gamma_Rig_007:left_clavicle_jnt
+    400178: Gamma_Rig_007:left_finger_jnt
+    400180: Gamma_Rig_007:move_me_hnd
+    400182: Gamma_Rig_007:neck_1_hnd
+    400184: Gamma_Rig_007:neck_1_jnt
+    400186: Gamma_Rig_007:neck_2_hnd
+    400188: Gamma_Rig_007:neck_2_jnt
+    400190: Gamma_Rig_007:neck_3_hnd
+    400192: Gamma_Rig_007:neck_3_Jnt
+    400194: Gamma_Rig_007:neck_4_hnd
+    400196: Gamma_Rig_007:neck_4_jnt
+    400198: Gamma_Rig_007:r_ankle_jnt
+    400200: Gamma_Rig_007:r_clavicle_jnt
+    400202: Gamma_Rig_007:r_elbow_hnd
+    400204: Gamma_Rig_007:r_elbow_jnt
+    400206: Gamma_Rig_007:r_finger_jnt
+    400208: Gamma_Rig_007:r_foot_hnd
+    400210: Gamma_Rig_007:r_foot_IK_all
+    400212: Gamma_Rig_007:r_heel_IK
+    400214: Gamma_Rig_007:r_heel_IK_GRP
+    400216: Gamma_Rig_007:r_heel_jnt
+    400218: Gamma_Rig_007:r_hip_jnt
+    400220: Gamma_Rig_007:r_hnd_jnt
+    400222: Gamma_Rig_007:r_knee_hnd
+    400224: Gamma_Rig_007:r_knee_jnt
+    400226: Gamma_Rig_007:r_shoulder_hnd
+    400228: Gamma_Rig_007:r_shoulder_jnt
+    400230: Gamma_Rig_007:r_toe_2_jnt
+    400232: Gamma_Rig_007:r_toe_jnt
+    400234: Gamma_Rig_007:r_wrist_hnd
+    400236: Gamma_Rig_007:r_wrist_jnt
+    400238: Gamma_Rig_007:root_jnt
+    400240: Gamma_Rig_007:spine_1_hnd
+    400242: Gamma_Rig_007:spine_1_jnt
+    400244: Gamma_Rig_007:spine_2_hnd
+    400246: Gamma_Rig_007:spine_2_jnt
+    400248: Gamma_Rig_007:spine_3_hnd
+    400250: Gamma_Rig_007:spine_3_jnt
+    400252: Gamma_Rig_007:toe_IK
+    400254: Gamma_Rig_007:toe_IK 1
+    400256: Gamma_Rig_007:toe_IK_GRP
+    400258: Gamma_Rig_007:toe_IK_GRP 1
+    400260: //RootNode
+    4300000: Gamma_Rig_007:gamma_export_ref_002:head_geo
+    4300002: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO
+    4300004: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_joint_GEO
+    4300006: Gamma_Rig_007:gamma_export_ref_002:r_arm_top_GEO
+    4300008: Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO
+    4300010: Gamma_Rig_007:gamma_export_ref_002:r_wrist_GEO
+    4300012: Gamma_Rig_007:gamma_export_ref_002:r_elbow_GEO
+    4300014: Gamma_Rig_007:gamma_export_ref_002:r_hand_GEO
+    4300016: Gamma_Rig_007:gamma_export_ref_002:l_hand_GEO
+    4300018: Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO
+    4300020: Gamma_Rig_007:gamma_export_ref_002:l_wrist_GEO
+    4300022: Gamma_Rig_007:gamma_export_ref_002:l_elbow_GEO
+    4300024: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO
+    4300026: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_joint_GEO
+    4300028: Gamma_Rig_007:gamma_export_ref_002:left_arm_top_GEO
+    4300030: Gamma_Rig_007:gamma_export_ref_002:r_thigh_joint_GEO
+    4300032: Gamma_Rig_007:gamma_export_ref_002:r_thigh_GEO
+    4300034: Gamma_Rig_007:gamma_export_ref_002:r_leg_GEO
+    4300036: Gamma_Rig_007:gamma_export_ref_002:r_knee_GEO
+    4300038: Gamma_Rig_007:gamma_export_ref_002:r_foot_GEO
+    4300040: Gamma_Rig_007:gamma_export_ref_002:l_thigh_joint_GEO
+    4300042: Gamma_Rig_007:gamma_export_ref_002:l_thigh_GEO
+    4300044: Gamma_Rig_007:gamma_export_ref_002:l_leg_GEO
+    4300046: Gamma_Rig_007:gamma_export_ref_002:l_knee_GEO
+    4300048: Gamma_Rig_007:gamma_export_ref_002:l_foot_GEO
+    4300050: Gamma_Rig_007:gamma_export_ref_002:torso_geo
+    4300052: Gamma_Rig_007:gamma_export_ref_002:waist_geo
+    4300054: Gamma_Rig_007:gamma_export_ref_002:hip_geo
+    4300056: Gamma_Rig_007:gamma_export_ref_002:neck_1_GEO
+    4300058: Gamma_Rig_007:gamma_export_ref_002:neck_2_GEO
+    4300060: Gamma_Rig_007:gamma_export_ref_002:neck_3_GEO
+    4300062: Gamma_Rig_007:gamma_export_ref_002:neck_4_GEO
+    7400000: PlayerRun
+    9500000: //RootNode
+    13700000: Gamma_Rig_007:gamma_export_ref_002:head_geo
+    13700002: Gamma_Rig_007:gamma_export_ref_002:hip_geo
+    13700004: Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO
+    13700006: Gamma_Rig_007:gamma_export_ref_002:l_elbow_GEO
+    13700008: Gamma_Rig_007:gamma_export_ref_002:l_foot_GEO
+    13700010: Gamma_Rig_007:gamma_export_ref_002:l_hand_GEO
+    13700012: Gamma_Rig_007:gamma_export_ref_002:l_knee_GEO
+    13700014: Gamma_Rig_007:gamma_export_ref_002:l_leg_GEO
+    13700016: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO
+    13700018: Gamma_Rig_007:gamma_export_ref_002:l_shoulder_joint_GEO
+    13700020: Gamma_Rig_007:gamma_export_ref_002:l_thigh_GEO
+    13700022: Gamma_Rig_007:gamma_export_ref_002:l_thigh_joint_GEO
+    13700024: Gamma_Rig_007:gamma_export_ref_002:l_wrist_GEO
+    13700026: Gamma_Rig_007:gamma_export_ref_002:left_arm_top_GEO
+    13700028: Gamma_Rig_007:gamma_export_ref_002:neck_1_GEO
+    13700030: Gamma_Rig_007:gamma_export_ref_002:neck_2_GEO
+    13700032: Gamma_Rig_007:gamma_export_ref_002:neck_3_GEO
+    13700034: Gamma_Rig_007:gamma_export_ref_002:neck_4_GEO
+    13700036: Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO
+    13700038: Gamma_Rig_007:gamma_export_ref_002:r_arm_top_GEO
+    13700040: Gamma_Rig_007:gamma_export_ref_002:r_elbow_GEO
+    13700042: Gamma_Rig_007:gamma_export_ref_002:r_foot_GEO
+    13700044: Gamma_Rig_007:gamma_export_ref_002:r_hand_GEO
+    13700046: Gamma_Rig_007:gamma_export_ref_002:r_knee_GEO
+    13700048: Gamma_Rig_007:gamma_export_ref_002:r_leg_GEO
+    13700050: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO
+    13700052: Gamma_Rig_007:gamma_export_ref_002:r_shoulder_joint_GEO
+    13700054: Gamma_Rig_007:gamma_export_ref_002:r_thigh_GEO
+    13700056: Gamma_Rig_007:gamma_export_ref_002:r_thigh_joint_GEO
+    13700058: Gamma_Rig_007:gamma_export_ref_002:r_wrist_GEO
+    13700060: Gamma_Rig_007:gamma_export_ref_002:torso_geo
+    13700062: Gamma_Rig_007:gamma_export_ref_002:waist_geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: PlayerRun
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:body_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:body_all_GRP/Gamma_Rig_007:gamma_export_ref_002:lower_body_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:body_all_GRP/Gamma_Rig_007:gamma_export_ref_002:lower_body_GRP/Gamma_Rig_007:gamma_export_ref_002:hip_geo
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:body_all_GRP/Gamma_Rig_007:gamma_export_ref_002:upper_body_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:body_all_GRP/Gamma_Rig_007:gamma_export_ref_002:upper_body_GRP/Gamma_Rig_007:gamma_export_ref_002:torso_geo
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:body_all_GRP/Gamma_Rig_007:gamma_export_ref_002:upper_body_GRP/Gamma_Rig_007:gamma_export_ref_002:waist_geo
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:head_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:head_GRP/Gamma_Rig_007:gamma_export_ref_002:head_geo
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_foot_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_foot_GRP/Gamma_Rig_007:gamma_export_ref_002:l_foot_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_GEO/Gamma_Rig_007:gamma_export_ref_002:l_knee_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_thigh_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_thigh_GRP/Gamma_Rig_007:gamma_export_ref_002:l_thigh_joint_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_thigh_GRP/Gamma_Rig_007:gamma_export_ref_002:l_thigh_joint_GEO/Gamma_Rig_007:gamma_export_ref_002:l_thigh_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO/Gamma_Rig_007:gamma_export_ref_002:l_elbow_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_GRP/Gamma_Rig_007:gamma_export_ref_002:l_arm_lower_GEO/Gamma_Rig_007:gamma_export_ref_002:l_wrist_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_hand_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:l_hand_GRP/Gamma_Rig_007:gamma_export_ref_002:l_hand_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_shoulder_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_shoulder_GRP/Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_shoulder_GRP/Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO/Gamma_Rig_007:gamma_export_ref_002:l_shoulder_joint_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:left_shoulder_GRP/Gamma_Rig_007:gamma_export_ref_002:l_shoulder_GEO/Gamma_Rig_007:gamma_export_ref_002:l_shoulder_joint_GEO/Gamma_Rig_007:gamma_export_ref_002:left_arm_top_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_1_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_1_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_1_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_2_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_2_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_2_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_3_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_3_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_3_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_4_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_all_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_4_GRP/Gamma_Rig_007:gamma_export_ref_002:neck_4_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO/Gamma_Rig_007:gamma_export_ref_002:r_elbow_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_lower_GEO/Gamma_Rig_007:gamma_export_ref_002:r_wrist_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_hand_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_hand_GRP/Gamma_Rig_007:gamma_export_ref_002:r_hand_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_joint_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_arm_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GRP/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_GEO/Gamma_Rig_007:gamma_export_ref_002:r_shoulder_joint_GEO/Gamma_Rig_007:gamma_export_ref_002:r_arm_top_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_foot_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_foot_GRP/Gamma_Rig_007:gamma_export_ref_002:r_foot_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_GEO/Gamma_Rig_007:gamma_export_ref_002:r_knee_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_thigh_GRP
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_thigh_GRP/Gamma_Rig_007:gamma_export_ref_002:r_thigh_joint_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:Gamma_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_leg_all_GRP/Gamma_Rig_007:gamma_export_ref_002:r_thigh_GRP/Gamma_Rig_007:gamma_export_ref_002:r_thigh_joint_GEO/Gamma_Rig_007:gamma_export_ref_002:r_thigh_GEO
+        weight: 1
+      - path: Gamma_Rig_007:gamma_export_ref_002:left
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:l_foot_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:l_foot_hnd/Gamma_Rig_007:l_knee_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:hip_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:l_shoulder_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:l_shoulder_hnd/Gamma_Rig_007:l_elbow_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:l_shoulder_hnd/Gamma_Rig_007:l_elbow_hnd/Gamma_Rig_007:l_wrist_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:neck_1_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:neck_1_hnd/Gamma_Rig_007:neck_2_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:neck_1_hnd/Gamma_Rig_007:neck_2_hnd/Gamma_Rig_007:neck_3_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:neck_1_hnd/Gamma_Rig_007:neck_2_hnd/Gamma_Rig_007:neck_3_hnd/Gamma_Rig_007:neck_4_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:r_shoulder_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:r_shoulder_hnd/Gamma_Rig_007:r_elbow_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:move_me_hnd/Gamma_Rig_007:spine_1_hnd/Gamma_Rig_007:spine_2_hnd/Gamma_Rig_007:spine_3_hnd/Gamma_Rig_007:r_shoulder_hnd/Gamma_Rig_007:r_elbow_hnd/Gamma_Rig_007:r_wrist_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:r_foot_hnd
+        weight: 1
+      - path: Gamma_Rig_007:hand_all_GRP/Gamma_Rig_007:base_Handle/Gamma_Rig_007:r_foot_hnd/Gamma_Rig_007:r_knee_hnd
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP/Gamma_Rig_007:l_heel_IK_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP/Gamma_Rig_007:l_heel_IK_GRP/Gamma_Rig_007:ball_IK_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP/Gamma_Rig_007:l_heel_IK_GRP/Gamma_Rig_007:ball_IK_GRP/Gamma_Rig_007:ball_IK
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP/Gamma_Rig_007:l_heel_IK_GRP/Gamma_Rig_007:ball_IK_GRP/Gamma_Rig_007:toe_IK_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP/Gamma_Rig_007:l_heel_IK_GRP/Gamma_Rig_007:ball_IK_GRP/Gamma_Rig_007:toe_IK_GRP/Gamma_Rig_007:toe_IK
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:l_foot_IK_GRP/Gamma_Rig_007:l_heel_IK_GRP/Gamma_Rig_007:l_heel_IK
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all/Gamma_Rig_007:r_heel_IK_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all/Gamma_Rig_007:r_heel_IK_GRP/Gamma_Rig_007:ball_K_GRP
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all/Gamma_Rig_007:r_heel_IK_GRP/Gamma_Rig_007:ball_K_GRP/Gamma_Rig_007:ball_IK
+          1
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all/Gamma_Rig_007:r_heel_IK_GRP/Gamma_Rig_007:ball_K_GRP/Gamma_Rig_007:toe_IK_GRP
+          1
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all/Gamma_Rig_007:r_heel_IK_GRP/Gamma_Rig_007:ball_K_GRP/Gamma_Rig_007:toe_IK_GRP
+          1/Gamma_Rig_007:toe_IK 1
+        weight: 1
+      - path: Gamma_Rig_007:IK_all_GRP/Gamma_Rig_007:r_foot_IK_all/Gamma_Rig_007:r_heel_IK_GRP/Gamma_Rig_007:r_heel_IK
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:l_hip_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:l_hip_jnt/Gamma_Rig_007:l_knee_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:l_hip_jnt/Gamma_Rig_007:l_knee_jnt/Gamma_Rig_007:l_ankle_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:l_hip_jnt/Gamma_Rig_007:l_knee_jnt/Gamma_Rig_007:l_ankle_jnt/Gamma_Rig_007:l_heel_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:l_hip_jnt/Gamma_Rig_007:l_knee_jnt/Gamma_Rig_007:l_ankle_jnt/Gamma_Rig_007:l_heel_jnt/Gamma_Rig_007:l_toe_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:l_hip_jnt/Gamma_Rig_007:l_knee_jnt/Gamma_Rig_007:l_ankle_jnt/Gamma_Rig_007:l_heel_jnt/Gamma_Rig_007:l_toe_jnt/Gamma_Rig_007:l_toe_2_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:r_hip_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:r_hip_jnt/Gamma_Rig_007:r_knee_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:r_hip_jnt/Gamma_Rig_007:r_knee_jnt/Gamma_Rig_007:r_ankle_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:r_hip_jnt/Gamma_Rig_007:r_knee_jnt/Gamma_Rig_007:r_ankle_jnt/Gamma_Rig_007:r_heel_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:r_hip_jnt/Gamma_Rig_007:r_knee_jnt/Gamma_Rig_007:r_ankle_jnt/Gamma_Rig_007:r_heel_jnt/Gamma_Rig_007:r_toe_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:hip_jnt/Gamma_Rig_007:r_hip_jnt/Gamma_Rig_007:r_knee_jnt/Gamma_Rig_007:r_ankle_jnt/Gamma_Rig_007:r_heel_jnt/Gamma_Rig_007:r_toe_jnt/Gamma_Rig_007:r_toe_2_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:left_clavicle_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:left_clavicle_jnt/Gamma_Rig_007:l_elbow_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:left_clavicle_jnt/Gamma_Rig_007:l_elbow_jnt/Gamma_Rig_007:l_elbow_jnt
+          1
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:left_clavicle_jnt/Gamma_Rig_007:l_elbow_jnt/Gamma_Rig_007:l_elbow_jnt
+          1/Gamma_Rig_007:l_wrist_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:left_clavicle_jnt/Gamma_Rig_007:l_elbow_jnt/Gamma_Rig_007:l_elbow_jnt
+          1/Gamma_Rig_007:l_wrist_jnt/Gamma_Rig_007:l_hand_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:left_clavicle_jnt/Gamma_Rig_007:l_elbow_jnt/Gamma_Rig_007:l_elbow_jnt
+          1/Gamma_Rig_007:l_wrist_jnt/Gamma_Rig_007:l_hand_jnt/Gamma_Rig_007:left_finger_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:neck_1_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:neck_1_jnt/Gamma_Rig_007:neck_2_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:neck_1_jnt/Gamma_Rig_007:neck_2_jnt/Gamma_Rig_007:neck_3_Jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:neck_1_jnt/Gamma_Rig_007:neck_2_jnt/Gamma_Rig_007:neck_3_Jnt/Gamma_Rig_007:neck_4_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:neck_1_jnt/Gamma_Rig_007:neck_2_jnt/Gamma_Rig_007:neck_3_Jnt/Gamma_Rig_007:neck_4_jnt/Gamma_Rig_007:head_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:r_clavicle_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:r_clavicle_jnt/Gamma_Rig_007:r_shoulder_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:r_clavicle_jnt/Gamma_Rig_007:r_shoulder_jnt/Gamma_Rig_007:r_elbow_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:r_clavicle_jnt/Gamma_Rig_007:r_shoulder_jnt/Gamma_Rig_007:r_elbow_jnt/Gamma_Rig_007:r_wrist_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:r_clavicle_jnt/Gamma_Rig_007:r_shoulder_jnt/Gamma_Rig_007:r_elbow_jnt/Gamma_Rig_007:r_wrist_jnt/Gamma_Rig_007:r_hnd_jnt
+        weight: 1
+      - path: Gamma_Rig_007:jnt_GRP/Gamma_Rig_007:root_jnt/Gamma_Rig_007:spine_1_jnt/Gamma_Rig_007:spine_2_jnt/Gamma_Rig_007:spine_3_jnt/Gamma_Rig_007:r_clavicle_jnt/Gamma_Rig_007:r_shoulder_jnt/Gamma_Rig_007:r_elbow_jnt/Gamma_Rig_007:r_wrist_jnt/Gamma_Rig_007:r_hnd_jnt/Gamma_Rig_007:r_finger_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

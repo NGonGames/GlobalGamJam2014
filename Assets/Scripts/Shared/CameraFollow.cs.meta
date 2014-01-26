@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: a74ccfc0ae269da4d8432db3173ddb81
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - client: {fileID: 400002, guid: 865fc4b5b57b77743a021aefd671cbb9, type: 2}
+  - server: {fileID: 400004, guid: 865fc4b5b57b77743a021aefd671cbb9, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
