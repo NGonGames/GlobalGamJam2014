@@ -14,6 +14,7 @@ public class NetworkManager : MonoBehaviour
 		loading0,
 		loading1,
 		loading2,
+		loading3,
 		prepare0,
 		prepare1,
 		ready,
@@ -38,6 +39,12 @@ public class NetworkManager : MonoBehaviour
 			case (int)NetworkState.loading1:
 			case (int)NetworkState.loading2:
 				PairNetworkObjects();
+				break;
+			case (int)NetworkState.loading3:
+				//Delete Stuff From GameStart.
+				foreach(GameObject gameObject in GameObject.FindGameObjectsWithTag("Menu")) {
+					Object.Destroy(gameObject);
+				}
 				break;
 		}
 	}
