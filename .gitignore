@@ -8,4 +8,8 @@ Assets/Scaleform/
 *.unityproj
 *.sln
 *.meta
+<<<<<<< HEAD
 *.userprefs
+=======
+Thumbs.db
+>>>>>>> 231c23f05a61f7dd26ea9f387dc2939b10ff4442
