@@ -40,7 +40,7 @@ ModelImporter:
     4300008: Box012
     4300010: Box011
     4300012: Box010
-    7400000: Take 001
+    7400000: SpikeAnim
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -56,7 +56,49 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SpikeAnim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box007
+        weight: 1
+      - path: Box008
+        weight: 1
+      - path: Box009
+        weight: 1
+      - path: Box010
+        weight: 1
+      - path: Box011
+        weight: 1
+      - path: Box012
+        weight: 1
+      - path: Cone002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
