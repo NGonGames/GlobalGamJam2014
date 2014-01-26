@@ -38,23 +38,23 @@ public class MenuCamera : SFCamera {
     {
 			// The eval key must be set before any Scaleform related classes are loaded, other Scaleform Initialization will not 
 			// take place.
-			#if (UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR) && !UNITY_WP8
+#if (UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR) && !UNITY_WP8
 			SF_SetKey("ES6F23QQA2UAQ81QUROOOYJQ6EWAYEQ4VNATLQ8IMQI2Q6IASZT4O3KM87PYD9R");
-			#elif UNITY_IPHONE
+#elif UNITY_IPHONE
 			SF_SetKey("");
-			#elif UNITY_ANDROID
+#elif UNITY_ANDROID
 			SF_SetKey("");
-			#elif UNITY_WP8
+#elif UNITY_WP8
 			sf_setKey("");
-			#endif
+#endif
 			
 			//For GL based platforms - Sets a number to use for Unity specific texture management.  Adjust this number if
 			//you start to experience black and/or mssing textures.
-			#if UNITY_WP8
+#if UNITY_WP8
 			sf_setTextureCount(500);
-			#else
+#else
 			SF_SetTextureCount(500);
-			#endif
+#endif
 			return base.Start();
     }
 
