@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour
 {
-	private const string typeName = "Game Designer";
+	private const string typeName = "Game Designer - Ben";
 	private const string gameName = "RoomRoom";
 	private float lastHostUpdate = 99999;
 	private float lastNetworkLoadUpdate = 99999;
