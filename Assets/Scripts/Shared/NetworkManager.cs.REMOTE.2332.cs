@@ -26,11 +26,8 @@ public class NetworkManager : MonoBehaviour
 	private MainMenu menuGUI = null;
 	private MainMenu hudGUI = null;
 	private MenuCamera gui = null;
-
-	private SplineAnimator playerSpline = null;
-
 	public int currentState;
-	
+
 	public bool localLoaded=false;
 	public GameObject player;
 	public GameObject spline;
@@ -70,11 +67,11 @@ public class NetworkManager : MonoBehaviour
 			case (int)NetworkState.prepare0:
 				if(Network.isServer) {
 					readyGUI = gui.AddMovie("InstructionsGameDesigner.swf");
-					hudGUI = gui.AddMovie("In_GameHUD.swf");
 				} else {
 					readyGUI = gui.AddMovie("InstructionsRobot.swf");
 				}
-				currentState++;
+					//hudGUI = gui.AddMovie("");
+					currentState++;
 				break;
 			case (int)NetworkState.ready0:
 				if(GameObject.Find(player.name+"(Clone)").GetComponent<MenuCamera>() != null) {
@@ -87,17 +84,13 @@ public class NetworkManager : MonoBehaviour
 				currentState++;
 				break;
 			case (int)NetworkState.playing:
-				if(playerSpline == null) {
-					playerSpline = GameObject.Find(player.name+"(Clone)").GetComponent<SplineAnimator>();
-				}
+				GameObject playerRef = GameObject.Find(player.name+"(Clone)");
+				Object.Destroy(playerRef.GetComponent<MenuCamera>());
 				if(Network.isClient) {
-					playerSpline.paused = false;
-				}
-				if(playerSpline.passedTime>=1) {
-					hudGUI.Destroy();
-					gui.AddMovie("Robot_WinAndLooseScreens.swf");
+					playerRef.GetComponent<SplineAnimator>().paused = false;
 				}
 				break;
+
 		}
 	}
 
