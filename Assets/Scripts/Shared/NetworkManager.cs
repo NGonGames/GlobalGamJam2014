@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class NetworkManager : MonoBehaviour
@@ -50,7 +50,8 @@ public class NetworkManager : MonoBehaviour
 			case (int)NetworkState.matching:
 				MatchMake();
 				break;
-			case 4:
+			case (int)NetworkState.loading0:
+			case (int)NetworkState.loading1:
 				PairNetworkObjects();
 				break;
 		}
@@ -83,6 +84,12 @@ public class NetworkManager : MonoBehaviour
 			GameObject splineRef = GameObject.Find(spline.name+"(Clone)");
 			if(playerRef != null && splineRef != null)
 			{
+				if(Network.isServer) {
+					Designer designerRef = GameObject.Find("Designer").GetComponent<Designer>();
+					designerRef.spline = splineRef.GetComponent<Spline>();
+					designerRef.cam = GameObject.Find("Camera").GetComponent<Camera>();
+				}
+
 				SplineAnimator tmpSpline = playerRef.GetComponent<SplineAnimator>();
 				tmpSpline.spline = splineRef.GetComponent<Spline>();
 				networkView.RPC("LoadingHandshake",RPCMode.All);
