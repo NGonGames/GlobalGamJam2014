@@ -31,7 +31,7 @@ public class SplineCharacterController : MonoBehaviour {
 	private void Movement() {
  		float h = Input.GetAxis("Horizontal");
 		
-		if (Input.GetButtonDown("Jump")) {
+		if (Input.GetButtonDown("Jump") && height == 0) {
 			yspeed = jumpHeight;
 		}
 		
