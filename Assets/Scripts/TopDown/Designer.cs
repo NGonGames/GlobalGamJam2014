@@ -26,6 +26,14 @@ public class Designer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetButtonDown("SpikeAbility"))
+			currentAbility = Abilities.Spike;
+		if (Input.GetButtonDown("MineAbility"))
+			currentAbility = Abilities.Mine;
+		if (Input.GetButtonDown("LazorAbility"))
+			currentAbility = Abilities.Lazor;
+
+
 		if (Input.GetMouseButtonDown(0) && Network.isServer && spline != null)
 		{
 			Ray rayHitTest = cam.ScreenPointToRay(Input.mousePosition);

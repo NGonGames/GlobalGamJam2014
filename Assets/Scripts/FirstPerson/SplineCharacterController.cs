@@ -12,20 +12,14 @@ public class SplineCharacterController : MonoBehaviour {
 	public AudioSource audioSource;
 	
 	private float offset = 0f;
-	private float height = 0f;
+	[HideInInspector]
+	public float height = 0f;
 	private float yspeed = 0f;
     
 	// Update is called once per frame
 	void Update () {
 		if(Network.isClient)
 			Movement();
-		else
-			SkyMovement();
-	}
-
-	private void SkyMovement() {
-		transform.localPosition = new Vector3(0, 8, 0);
-		transform.rotation.eulerAngles.Set(90, 0, 0);
 	}
 
 	private void Movement() {

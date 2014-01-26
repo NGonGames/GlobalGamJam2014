@@ -25,6 +25,7 @@ public class NetworkManager : MonoBehaviour
 	public GameObject player;
 	public GameObject spline;
 	public float pollRate = 1;
+	public SoundManager soundManager;
 
 //GameObject Stuff
 	void Update()
@@ -116,6 +117,7 @@ public class NetworkManager : MonoBehaviour
 	{
 		//Create the spline.
 		//Set the Player's Spline
+		soundManager.DesignerTheme();
 		Application.LoadLevelAdditiveAsync("Game-Designer");
 		currentState = (int)NetworkState.loading0;
 		//TODO finish the loading screen.
@@ -132,6 +134,7 @@ public class NetworkManager : MonoBehaviour
 	}
 	void OnConnectedToServer()
 	{
+		soundManager.RobotTheme();
 		Application.LoadLevelAdditiveAsync("Game-Player");
 		//TODO Create Player
 		currentState = (int)NetworkState.loading0;
