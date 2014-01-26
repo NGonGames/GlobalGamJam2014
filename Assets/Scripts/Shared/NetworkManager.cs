@@ -13,6 +13,7 @@ public class NetworkManager : MonoBehaviour
 		connecting,
 		loading0,
 		loading1,
+		loading2,
 		prepare0,
 		prepare1,
 		ready,
@@ -23,34 +24,19 @@ public class NetworkManager : MonoBehaviour
 	public GameObject player;
 	public GameObject spline;
 	public float pollRate = 1;
-	
-	void OnGUI()
-	{
-		if (!Network.isClient && !Network.isServer)
-		{
-			if (GUI.Button(new Rect(100, 100, 250, 100), "Game Designer"))
-				StartServer();
-			
-			if (GUI.Button(new Rect(100, 250, 250, 100), "Player"))
-				currentState = (int)NetworkState.matching;
-				//TODO Show matchmaking screen.
-			
-
-		}
-	}
 
 //GameObject Stuff
-	void Start()
-	{
-		DontDestroyOnLoad(transform.gameObject);
-	}
 	void Update()
 	{
 		switch(currentState) {
 			case (int)NetworkState.matching:
 				MatchMake();
 				break;
-			case 4:
+			case (int)NetworkState.loading0:
+				LoadNetworkObjects();
+				break;
+			case (int)NetworkState.loading1:
+			case (int)NetworkState.loading2:				
 				PairNetworkObjects();
 				break;
 		}
@@ -70,13 +56,8 @@ public class NetworkManager : MonoBehaviour
 			}
 			lastHostUpdate += Time.deltaTime;
 	}
-	private void StartServer()
-	{
-		Network.maxConnections = 2;
-		Network.InitializeServer(5, 1337, !Network.HavePublicAddress());
-		MasterServer.RegisterHost(typeName, gameName);
-	}
-	private void PairNetworkObjects(){
+
+	private void PairNetworkObjects() {
 		
 		if (lastNetworkLoadUpdate>0.1) {
 			GameObject playerRef = GameObject.Find(player.name+"(Clone)");
@@ -101,19 +82,28 @@ public class NetworkManager : MonoBehaviour
 		//the other person is ready start the game
 		currentState++;
 	}
-	void OnLevelWasLoaded () {
+	void LoadNetworkObjects () {
 		if(Network.isServer){			
 			Network.Instantiate(spline,Vector3.one,Quaternion.identity,0);
 		} else {			
 			Network.Instantiate(player,Vector3.one,Quaternion.identity,0);
 		}
+		currentState++;
 	}
 //Server Stuff
+	
+	public void StartServer()
+	{
+		Network.maxConnections = 2;
+		Network.InitializeServer(5, 1337, !Network.HavePublicAddress());
+		MasterServer.RegisterHost(typeName, gameName);
+	}
+
 	void OnPlayerConnected()
 	{
 		//Create the spline.
 		//Set the Player's Spline
-		Application.LoadLevel("Game-Designer");
+		Application.LoadLevelAdditiveAsync("Game-Designer");
 		currentState = (int)NetworkState.loading0;
 		//TODO finish the loading screen.
 		//TODO show the ready screen.
@@ -124,9 +114,12 @@ public class NetworkManager : MonoBehaviour
 	}
 
 //Client Stuff
+	public void StartClient() {		
+		currentState = (int)NetworkState.matching;
+	}
 	void OnConnectedToServer()
 	{
-		Application.LoadLevel("Game-Player");
+		Application.LoadLevelAdditiveAsync("Game-Player");
 		//TODO Create Player
 		currentState = (int)NetworkState.loading0;
 		//TODO Show the Ready screen.
