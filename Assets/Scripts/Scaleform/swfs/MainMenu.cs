@@ -48,6 +48,10 @@ public class MainMenu : Movie
 	public void ReadyGo() {
 		GameObject.Find("NetworkManager").GetComponent<NetworkManager>().currentState = (int)NetworkManager.NetworkState.playing;
 	}
+	public void restart() {
+		Application.LoadLevel("Menu");
+		GameObject.Destroy(GameObject.Find("NetworkManager"));
+	}
 }
 	
 	

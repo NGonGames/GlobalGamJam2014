@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour
 {
-	private const string typeName = "Game Designer - Scott";
+	private const string typeName = "Game Designer -";
 	private const string gameName = "RoomRoom";
 	private float lastHostUpdate = 99999;
 	private float lastNetworkLoadUpdate = 99999;
@@ -26,8 +26,11 @@ public class NetworkManager : MonoBehaviour
 	private MainMenu menuGUI = null;
 	private MainMenu hudGUI = null;
 	private MenuCamera gui = null;
-	public int currentState;
 
+	private SplineAnimator playerSpline = null;
+
+	public int currentState;
+	
 	public bool localLoaded=false;
 	public GameObject player;
 	public GameObject spline;
@@ -67,11 +70,11 @@ public class NetworkManager : MonoBehaviour
 			case (int)NetworkState.prepare0:
 				if(Network.isServer) {
 					readyGUI = gui.AddMovie("InstructionsGameDesigner.swf");
+					hudGUI = gui.AddMovie("In_GameHUD.swf");
 				} else {
 					readyGUI = gui.AddMovie("InstructionsRobot.swf");
 				}
-					//hudGUI = gui.AddMovie("");
-					currentState++;
+				currentState++;
 				break;
 			case (int)NetworkState.ready0:
 				if(GameObject.Find(player.name+"(Clone)").GetComponent<MenuCamera>() != null) {
@@ -84,13 +87,17 @@ public class NetworkManager : MonoBehaviour
 				currentState++;
 				break;
 			case (int)NetworkState.playing:
-				GameObject playerRef = GameObject.Find(player.name+"(Clone)");
-				Object.Destroy(playerRef.GetComponent<MenuCamera>());
+				if(playerSpline == null) {
+					playerSpline = GameObject.Find(player.name+"(Clone)").GetComponent<SplineAnimator>();
+				}
 				if(Network.isClient) {
-					playerRef.GetComponent<SplineAnimator>().paused = false;
+					playerSpline.paused = false;
+				}
+				if(playerSpline.passedTime>=1) {
+					hudGUI.Destroy();
+					gui.AddMovie("Robot_WinAndLooseScreens.swf");
 				}
 				break;
-
 		}
 	}
 
