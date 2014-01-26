@@ -3,11 +3,11 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour
 {
-	private const string typeName = "Game Designer - Ben";
+	private const string typeName = "Game Designer - Scott";
 	private const string gameName = "RoomRoom";
 	private float lastHostUpdate = 99999;
 	private float lastNetworkLoadUpdate = 99999;
-	private enum NetworkState:int {
+	public enum NetworkState:int {
 		idle,
 		matching,
 		connecting,
@@ -17,11 +17,18 @@ public class NetworkManager : MonoBehaviour
 		loading3,
 		prepare0,
 		prepare1,
-		ready,
+		prepare2,
+		ready0,
+		ready1,
 		playing
 	};
-	private int currentState;
+	private MainMenu readyGUI = null;
+	private MainMenu menuGUI = null;
+	private MainMenu hudGUI = null;
+	private MenuCamera gui = null;
+	public int currentState;
 
+	public bool localLoaded=false;
 	public GameObject player;
 	public GameObject spline;
 	public float pollRate = 1;
@@ -29,7 +36,15 @@ public class NetworkManager : MonoBehaviour
 //GameObject Stuff
 	void Update()
 	{
+		if(gui == null)  {
+			gui = GameObject.Find("GUI").GetComponent<MenuCamera>();
+		}
 		switch(currentState) {
+			case (int)NetworkState.idle:
+				if(menuGUI == null){
+					menuGUI = gui.AddMovie("MainMenu.swf");				
+				}
+				break;
 			case (int)NetworkState.matching:
 				MatchMake();
 				break;
@@ -38,14 +53,42 @@ public class NetworkManager : MonoBehaviour
 				break;
 			case (int)NetworkState.loading1:
 			case (int)NetworkState.loading2:
-				PairNetworkObjects();
+				if(!localLoaded) {
+					PairNetworkObjects();
+				}
 				break;
 			case (int)NetworkState.loading3:
 				//Delete Stuff From GameStart.
-				foreach(GameObject gameObject in GameObject.FindGameObjectsWithTag("Menu")) {
-					Object.Destroy(gameObject);
+				menuGUI.Destroy();
+				currentState++;
+				break;
+			case (int)NetworkState.prepare0:
+				if(Network.isServer) {
+					readyGUI = gui.AddMovie("InstructionsGameDesigner.swf");
+				} else {
+					readyGUI = gui.AddMovie("InstructionsRobot.swf");
+				}
+					//hudGUI = gui.AddMovie("");
+					currentState++;
+				break;
+			case (int)NetworkState.ready0:
+				if(GameObject.Find(player.name+"(Clone)").GetComponent<MenuCamera>() != null) {
+					readyGUI.ReadyChecked();
+				}
+				currentState++;
+				break;
+			case (int)NetworkState.ready1:
+				readyGUI.Destroy();
+				currentState++;
+				break;
+			case (int)NetworkState.playing:
+				GameObject playerRef = GameObject.Find(player.name+"(Clone)");
+				Object.Destroy(playerRef.GetComponent<MenuCamera>());
+				if(Network.isClient) {
+					playerRef.GetComponent<SplineAnimator>().paused = false;
 				}
 				break;
+
 		}
 	}
 
@@ -74,12 +117,14 @@ public class NetworkManager : MonoBehaviour
 				if(Network.isServer) {
 					Designer designerRef = GameObject.Find("Designer").GetComponent<Designer>();
 					designerRef.spline = splineRef.GetComponent<Spline>();
-					designerRef.cam = GameObject.Find("Camera").GetComponent<Camera>();
+					GameObject camGam = GameObject.Find("PlayerCamera");
+					designerRef.cam = camGam.GetComponent<Camera>();
 				}
 
 				SplineAnimator tmpSpline = playerRef.GetComponent<SplineAnimator>();
 				tmpSpline.spline = splineRef.GetComponent<Spline>();
 				networkView.RPC("LoadingHandshake",RPCMode.All);
+				localLoaded = true;
 			}
 			lastNetworkLoadUpdate = 0;
 		}

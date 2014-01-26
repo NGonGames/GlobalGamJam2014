@@ -22,9 +22,9 @@ using Scaleform.GFx;
 public class MainMenu : Movie
 {
     protected Value	theMovie = null;
-	private MyCamera parent = null;
+	private MenuCamera parent = null;
     
-    public MainMenu(MyCamera parent, SFManager sfmgr, SFMovieCreationParams cp) :
+    public MainMenu(MenuCamera parent, SFManager sfmgr, SFMovieCreationParams cp) :
         base(sfmgr, cp)
     {
 		this.parent = parent;
@@ -37,6 +37,16 @@ public class MainMenu : Movie
 	}
 	public void StartClient() {		
 		GameObject.Find("NetworkManager").GetComponent<NetworkManager>().StartClient();
+	}
+
+	public void Ready() {
+		GameObject.Find("NetworkManager").GetComponent<NetworkManager>().networkView.RPC("ReadyHandshake",RPCMode.All);
+	}
+	public void ReadyChecked() {
+		theMovie.GetMember("waiting").SetBool(true);
+	}
+	public void ReadyGo() {
+		GameObject.Find("NetworkManager").GetComponent<NetworkManager>().currentState = (int)NetworkManager.NetworkState.playing;
 	}
 }
 	

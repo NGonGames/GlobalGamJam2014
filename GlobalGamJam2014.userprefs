@@ -1,12 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TopDown\Designer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scaleform\Scripts\Shared\NetworkManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\TopDown\Designer.cs" Line="18" Column="19" />
+      <File FileName="Assets\Scaleform\Scripts\Shared\NetworkManager.cs" Line="45" Column="6" />
+      <File FileName="Assets\Scaleform\Scripts\Scaleform\MenuCamera.cs" Line="66" Column="2" />
+      <File FileName="Assets\Plugins\SF\SFCamera.cs" Line="52" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Scott\Documents\GlobalGamJam2014\Assets\Scaleform\Scripts\Shared\NetworkManager.cs" line="73" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
